@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1, p {
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  position: absolute;
+  height: 500px;
+  width: 300px;
+  z-index: 15;
+  top: 30%;
+  left:50%;
+  margin: -100px 0 0 -150px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+form > label {
+  padding-bottom: 10px;
+  color: rgb(0,0,196);
+  font-weight: bold;
+}
+
+form > input {
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(141, 136, 136);
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0,0,32);
+  outline: none;
+}
+
+form > input:focus {
+  border: 1px solid rgb(0,0,196);
+}
+
+form > button {
+  padding: 15px;
+  border: none;
+  background-color: #ff9900;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form > button:hover {
+  color: #fff;
+}
+
+form > button:disabled {
+  background-color: #ffd699;
 }

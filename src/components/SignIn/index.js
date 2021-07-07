@@ -4,12 +4,14 @@ import {compose} from 'recompose';
 
 import { withFirebase } from '../Firebase';
 import { SignUpLink } from '../SignUp';
+import { PasswordForgetLink } from '../PasswordForget';
 import * as ROUTES from '../../constants/routes';
 
 const SignInPage = () => (
-    <div>
+    <div className="container" style={{'height': '350px'}}>
         <h1>Sign In</h1>
         <SignInForm />
+        <PasswordForgetLink />
         <SignUpLink />
     </div>
 )
